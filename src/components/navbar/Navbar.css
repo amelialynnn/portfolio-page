@@ -12,28 +12,22 @@ p {
 /* --------------------------- Navbar and burger menu ----------------- */
 
 nav {
-  width: 100%;
-  height: 80px;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
-  background-color: green;
-  opacity: 0.8;
 }
 
 .burger-menu {
   height: 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding-right: 2em;
   justify-content: space-between;
   cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 2em;
 }
 
 .burger-bar {
@@ -43,8 +37,36 @@ nav {
   border-radius: 0.5em;
 }
 
+.menu {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em 0;
+  background-color: green;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.menu li {
+  text-align: center;
+}
+
 .menu a {
-  color: #fff;
+  color: rgb(245, 66, 191);
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -53,36 +75,31 @@ nav {
   padding: 15px 26px 10px;
 }
 
-/* ------------------------ Sliding Menu ------------------------ */
+/* ------------------------ Sliding Menu Animation ------------------------ */
 
-.hidden {
-  display: none;
+.menu.hidden {
+  transition: 0.5s ease-in-out;
 }
 
-.visible {
-  display: inherit;
+.menu.hidden li {
+  transform: translateY(-700px);
+  transition: 0.5s ease-in-out;
 }
 
 .menu.visible {
-  width: 100%;
-  height: calc(100vh - 80px);
-  position: absolute;
-  top: 80px;
-  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: green;
-  display: flex;
-  justify-content: center;
-}
-.menu.visible ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
 }
 
 .menu.visible li {
-  display: flex;
-  justify-content: center;
+  transition: 0.5s ease-in-out;
 }
 
 /* ------------------------- Animations -------------------------- */
@@ -116,7 +133,7 @@ nav {
   transition: all 1s ease-in-out;
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -134,3 +151,4 @@ nav {
     align-items: center;
   }
 }
+ */
