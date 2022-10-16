@@ -1,0 +1,11 @@
+.sub-header {
+  /*   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding-top: 280px;
+  color: white;
+  font-size: 1.6em;
+  text-align: left;
+  word-wrap: break-word;
+}

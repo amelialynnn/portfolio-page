@@ -2,13 +2,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-p {
-  height: 100vh;
-  color: red;
-  text-align: center;
-}
-
 /* --------------------------- Navbar and burger menu ----------------- */
 
 nav {
@@ -33,7 +26,7 @@ nav {
 .burger-bar {
   width: 40px;
   height: 5px;
-  background-color: rgb(245, 66, 191);
+  background-color: white;
   border-radius: 0.5em;
 }
 
@@ -46,8 +39,8 @@ nav {
   bottom: 0;
   left: 0;
   padding: 1em 0;
-  background-color: green;
-  opacity: 0.8;
+  background-color: #52ba5a /* #ef4e8e */;
+  opacity: 0.97;
   z-index: -1;
 }
 
@@ -55,6 +48,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: nowrap;
   height: fit-content;
   gap: 40px;
   padding-top: 80px;
@@ -66,13 +60,39 @@ nav {
 }
 
 .menu a {
-  color: rgb(245, 66, 191);
+  color: white;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
   display: inline-block;
-  padding: 15px 26px 10px;
+  padding: 15px 5px 10px 5px;
+}
+
+.menu ul li a,
+.menu ul li a:after,
+.menu ul li a:before {
+  transition: all 0.5s;
+}
+
+/* stroke */
+.stroke ul li a {
+  position: relative;
+}
+.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ef4e8e;
+  height: 4px;
+}
+.stroke ul li a:hover:after {
+  width: 100%;
 }
 
 /* ------------------------ Sliding Menu Animation ------------------------ */
@@ -90,7 +110,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: green;
+  background-color: #52ba5a;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -133,22 +153,24 @@ nav {
   transition: all 1s ease-in-out;
 }
 
-/* @media screen and (max-width: 767px) {
-}
+@media screen and (min-width: 1100px) {
+  .burger-menu {
+    display: none;
+  }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  nav {
-    display: flex;
+  .menu.visible {
+    height: 80px;
+  }
+  .menu.hidden ul li {
+    transform: translateY(0);
+  }
+
+  .menu ul {
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 70px;
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
- */
