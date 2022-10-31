@@ -5,7 +5,7 @@ import './SubHeader.css'
 const SubHeader = () => {
   return (
     <h1 className="sub-header">
-      Hi, I'm Amelia! I'm a Frontend Developer located in Gothenburg.
+      Hi, I'm Amelia! I'm a <span className='frontend-span'>Frontend Developer</span> located in Gothenburg.
     </h1>
   )
 }

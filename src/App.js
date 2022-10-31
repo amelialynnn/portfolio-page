@@ -9,9 +9,17 @@ function App() {
     <div className="App">
       <header id="home" className="header-container">
         <Navbar></Navbar>
-        <SubHeader></SubHeader>
+        <div className='wrapper-width'>
+          <SubHeader></SubHeader>
+        </div>
       </header>
-      <About></About>
+      <main>
+        <section className='about-container' id="about" >
+          <div className='wrapper-width'>
+            <About></About>
+          </div>
+        </section>
+      </main>
     </div>
   )
 }

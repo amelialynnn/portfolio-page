@@ -5,7 +5,12 @@
   align-items: center; */
   padding-top: 280px;
   color: white;
-  font-size: 1.6em;
+  font-size: 3rem;
+  max-width: 890px;
   text-align: left;
   word-wrap: break-word;
+}
+
+.frontend-span {
+  color: #ef4e8e;
 }
