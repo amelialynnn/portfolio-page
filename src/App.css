@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 *,
 *::after,
 *::before {
@@ -14,64 +15,9 @@
 
 body {
   color: #effffa;
-  height: 100vh;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  overflow-x: hidden;
 }
-
-.wrapper-width {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 8%;
-}
-
-
-/* HEADER */
-
-.header-container {
-  width: 100%;
-  height: 80vh;
-  background-color: #65e38c;
-  position: relative;
-}
-
-.header-container:before {
-  content: url(/src/assets/bonbon-sprig-with-leaves.png);
-  position: absolute;
-  display: block;
-  transform: rotate(70deg);
-  top: -112px;
-}
-
-.header-container:after {
-  content: url(/src/assets/bonbon-flower.png);
-  position: absolute;
-  display: block;
-  transform: scale(0.6);
-  bottom: -80px;
-  right: -40px;
-}
-
-/* ABOUT SECTION */
-.about-container {
-  background-color: #f6e6e0;
-}
-
-/* HEADER */
-@media screen and (max-width: 500px) {
-  .header-container:after {
-    transform: scale(0.7);
-    bottom: -70px;
-    right: -30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-container:after {
-    transform: scale(1);
-  }
-}
-
-/* @media screen and (min-width: 1024px) {
-} */

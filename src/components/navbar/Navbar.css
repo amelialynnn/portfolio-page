@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /* --------------------------- Navbar and burger menu ----------------- */
 
 nav {
@@ -10,6 +11,7 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
 }
 
 .burger-menu {
@@ -39,7 +41,7 @@ nav {
   bottom: 0;
   left: 0;
   padding: 1em 0;
-  background-color: #52ba5a /* #ef4e8e */;
+  background-color: #52ba5a;
   opacity: 0.97;
   z-index: -1;
 }
@@ -79,6 +81,7 @@ nav {
 .stroke ul li a {
   position: relative;
 }
+
 .stroke ul li a:after {
   position: absolute;
   bottom: 0;
@@ -91,6 +94,7 @@ nav {
   background: #ef4e8e;
   height: 4px;
 }
+
 .stroke ul li a:hover:after {
   width: 100%;
 }
@@ -161,6 +165,7 @@ nav {
   .menu.visible {
     height: 80px;
   }
+
   .menu.hidden ul li {
     transform: translateY(0);
   }

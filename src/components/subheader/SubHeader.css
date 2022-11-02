@@ -1,16 +1,26 @@
 .sub-header {
-  /*   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  padding-top: 280px;
   color: white;
-  font-size: 3rem;
-  max-width: 890px;
+  font-size: 2.3rem;
+  max-width: 1000px;
+  min-width: 300px;
   text-align: left;
   word-wrap: break-word;
 }
 
 .frontend-span {
   color: #ef4e8e;
+}
+
+/* Tablet from 415px through 1023px */
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+  .sub-header {
+    font-size: 2.8rem;
+  }
+}
+
+/* Desktop from 1024px and over */
+@media screen and (min-width: 1024px) {
+  .sub-header {
+    font-size: 3.3rem;
+  }
 }

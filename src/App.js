@@ -1,4 +1,5 @@
 import './App.css'
+import './main-style.css'
 
 import Navbar from './components/navbar/Navbar'
 import SubHeader from './components/subheader/SubHeader'
@@ -7,11 +8,14 @@ import About from './components/about/About'
 function App() {
   return (
     <div className="App">
-      <header id="home" className="header-container">
-        <Navbar></Navbar>
-        <div className='wrapper-width'>
-          <SubHeader></SubHeader>
+      <header id="home" className="header-container-outer">
+        <div className="header-container-inner">
+          <Navbar></Navbar>
+          <div className='wrapper-width'>
+            <SubHeader></SubHeader>
+          </div>
         </div>
+        <div className="angle angle-1"></div>
       </header>
       <main>
         <section className='about-container' id="about" >
@@ -19,6 +23,7 @@ function App() {
             <About></About>
           </div>
         </section>
+        <div class="angle angle-2"></div>
       </main>
     </div>
   )
