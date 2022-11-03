@@ -2,7 +2,7 @@
 
 In this project I have built my portfolio website with React.
 
-## [View  it here](https://www.ameliaandreasson.se/)
+**[View  it here](https://www.ameliaandreasson.se/)**
 
 ## Available Scripts
 
