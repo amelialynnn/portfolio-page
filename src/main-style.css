@@ -1,6 +1,8 @@
 /* Design for mobile displays from 360×640px up to 414×896px */
 /* Design for tablet displays from 415×962px through 1023x800px */
-/* Design for desktop displays from 1024×768px and over */
+/* Design for desktop displays from 1024×768px */
+/* Design for large desktop displays from 2560x1440px and over */
+
 
 .wrapper-width {
     max-width: 1280px;
@@ -69,8 +71,8 @@
 }
 
 
-/* Tablet from 415px through 1023px */
-@media screen and (min-width: 415px) and (max-width: 1023px) {
+/* Tablet from 415px */
+@media screen and (min-width: 415px) {
 
     .header-container-outer {
         padding: 300px 0 280px 0;
@@ -92,7 +94,7 @@
     }
 }
 
-/* Desktop from 1024px and over */
+/* Desktop from 1024px */
 @media screen and (min-width: 1024px) {
 
     .header-container-outer {
@@ -112,5 +114,35 @@
     .angle-1,
     .angle-1::after {
         height: 120px;
+    }
+}
+
+
+/* Large Desktop from 2560px and over */
+@media screen and (min-width: 2560px) {
+
+    .wrapper-width {
+        max-width: 2000px;
+    }
+
+    .header-container-outer {
+        padding: 500px 0 500px 0;
+    }
+
+    .header-container-outer::before {
+        transform: rotate(68deg) scale(2.5);
+        top: -80px;
+        left: 250px;
+    }
+
+    .header-container-outer::after {
+        transform: scale(1.5);
+        bottom: 90px;
+        right: 40px;
+    }
+
+    .angle-1,
+    .angle-1::after {
+        height: 150px;
     }
 }

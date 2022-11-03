@@ -31,32 +31,32 @@ const Navbar = () => {
       <div className={menu_class}>
         <ul>
           <li>
-            <a href="#home" aria-label="go to home section.">
+            <a href="#home" aria-label="go to home section." onClick={updateMenu}>
               Home
             </a>
           </li>
           <li>
-            <a href="#about" aria-label="go to about section.">
+            <a href="#about" aria-label="go to about section." onClick={updateMenu}>
               About
             </a>
           </li>
           <li>
-            <a href="#skills-tools" aria-label="go to skills & tools section.">
+            <a href="#skills-tools" aria-label="go to skills & tools section." onClick={updateMenu}>
               Skills & Tools
             </a>
           </li>
           <li>
-            <a href="#work" aria-label="go to work section.">
+            <a href="#work" aria-label="go to work section." onClick={updateMenu}>
               Work
             </a>
           </li>
           <li>
-            <a href="#testimonials" aria-label="go to testimonials section.">
+            <a href="#testimonials" aria-label="go to testimonials section." onClick={updateMenu}>
               Testimonials
             </a>
           </li>
           <li>
-            <a href="#contact" aria-label="go to contact section.">
+            <a href="#contact" aria-label="go to contact section." onClick={updateMenu}>
               Contact
             </a>
           </li>
