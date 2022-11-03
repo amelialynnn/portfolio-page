@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import './Navbar.css'
+import './navbar.css'
 
 const Navbar = () => {
   // to change burger classes

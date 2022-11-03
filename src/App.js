@@ -4,6 +4,7 @@ import './main-style.css'
 import Navbar from './components/navbar/Navbar'
 import SubHeader from './components/subheader/SubHeader'
 import About from './components/about/About'
+import SkillsAndTools from './components/skillsandtools/SkillsAndTools'
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
           </div>
         </section>
         <div class="angle angle-2"></div>
+        <section className='skills-tools-container' id="skills-tools" >
+          <div className='wrapper-width'>
+            <SkillsAndTools></SkillsAndTools>
+          </div>
+        </section>
       </main>
     </div>
   )

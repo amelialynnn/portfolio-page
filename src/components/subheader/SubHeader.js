@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './SubHeader.css'
+import './sub-header.css'
 
 const SubHeader = () => {
   return (
