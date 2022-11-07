@@ -37,7 +37,7 @@ nav {
   left: 0;
   padding: 1em 0;
   background-color: #52ba5a;
-  opacity: 0.97;
+  opacity: 0.95;
   z-index: -1;
 }
 
@@ -115,6 +115,7 @@ nav {
   overflow: auto;
   z-index: -1;
   transition: 0.5s ease-in-out;
+  opacity: 0.98;
 }
 
 .menu.visible li {

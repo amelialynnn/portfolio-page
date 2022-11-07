@@ -1,4 +1,26 @@
 .about-container {
-  padding: 100px 0 500px;
-  background-color: #f6e6e0;
+    padding: 90px 0 90px 0;
+    background-color: #f6e6e0;
+    color: black;
+    overflow-x: hidden;
+}
+
+.about-container h2 {
+    color: #9957e7;
+}
+
+section.about-container .content-container {
+    /* display: flex; */
+}
+
+.profile-image-container {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.profile-image-container img {
+    border-radius: 50%;
+    width: 100%;
+    min-width: 100%;
 }

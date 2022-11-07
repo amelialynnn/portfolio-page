@@ -2,7 +2,7 @@
 
 In this project I have built my portfolio website with React.
 
-**[:woman_technologist: View Portfolio](https://www.ameliaandreasson.se/)** 
+**[View Portfolio :woman_technologist:](https://www.ameliaandreasson.se/)** 
 
 ## Available Scripts
 
