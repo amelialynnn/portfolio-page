@@ -13,7 +13,7 @@
 .header-container-outer {
     width: 100%;
     padding: 240px 0 200px 0;
-    background-color: #65e38c;
+    background-color: #5eef8b;
     position: relative;
     overflow-x: hidden;
 }
@@ -60,13 +60,13 @@
 }
 
 .angle-1::after {
-    background-color: #65e38c;
+    background-color: #5eef8b;
     clip-path: polygon(100% 0, 0% 100%, 0 0);
 }
 
 /* Angle 2 */
 .angle-2 {
-    background-color: #c58bf8;
+    background-color: #8b9ef8;
 }
 
 .angle-2,
@@ -83,19 +83,19 @@
 
 /* Angle 3 */
 .angle-3 {
-    background-color: #8b9ef8;
+    background-color: #f8ae8b;
 }
 
 .angle-3,
 .angle-3::after {
     content: '';
     position: absolute;
-    height: 60px;
+    height: 90px;
     width: 100%;
     /* bottom: 0px; */
 }
 .angle-3::after {
-    background-color: #c58bf8;
+    background-color: #8b9ef8;
     clip-path: polygon(
         100% 0,
         100% 100%,

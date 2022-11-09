@@ -1,125 +1,125 @@
 /* --------------------------- Navbar and burger menu ----------------- */
 
 nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .burger-menu {
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-  right: 2em;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 2em;
 }
 
 .burger-bar {
-  width: 40px;
-  height: 5px;
-  background-color: white;
-  border-radius: 0.5em;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 0.5em;
 }
 
 .menu {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1em 0;
-  background-color: #52ba5a;
-  opacity: 0.95;
-  z-index: -1;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px 0;
+    background-color: #5fda69;
+    opacity: 0.95;
+    z-index: -1;
 }
 
 .menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  height: fit-content;
-  gap: 40px;
-  padding-top: 80px;
-  padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: fit-content;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .menu li {
-  text-align: center;
+    text-align: center;
 }
 
 .menu a {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.02rem;
-  display: inline-block;
-  padding: 15px 5px 10px 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    display: inline-block;
+    padding: 15px 5px 10px 5px;
 }
 
 .menu ul li a,
 .menu ul li a:after,
 .menu ul li a:before {
-  transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 /* stroke */
 .stroke ul li a {
-  position: relative;
+    position: relative;
 }
 
 .stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #ef4e8e;
-  height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #ef4e8e;
+    height: 4px;
 }
 
 .stroke ul li a:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 /* ------------------------ Sliding Menu Animation ------------------------ */
 
 .menu.hidden {
-  transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .menu.hidden li {
-  transform: translateY(-700px);
-  transition: 0.5s ease-in-out;
+    transform: translateY(-700px);
+    transition: 0.5s ease-in-out;
 }
 
 .menu.visible {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #52ba5a;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  z-index: -1;
-  transition: 0.5s ease-in-out;
-  opacity: 0.98;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #5fda69 /* 52ba5a */;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    opacity: 0.98;
 }
 
 .menu.visible li {
-  transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /* ------------------------- Animations -------------------------- */
@@ -127,67 +127,66 @@ nav {
 /* clicked */
 
 .burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.6em, 0.6em);
-  transition: ease-out 0.5s;
+    transform: rotate(45deg) translate(0.6em, 0.6em);
+    transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
-  transition: ease-out 0.5s;
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.5em, 0.5em);
-  transition: ease-out 0.5s;
+    transform: rotate(135deg) translate(-0.5em, 0.5em);
+    transition: ease-out 0.5s;
 }
 
 /* unclicked */
 
 .burger-bar.unclicked {
-  transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
 /* visible */
 .menu.visible.li {
-  transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
-
 @media screen and (min-width: 1100px) {
-  .burger-menu {
-    display: none;
-  }
+    .burger-menu {
+        display: none;
+    }
 
-  .menu.visible {
-    height: 80px;
-  }
+    .menu.visible {
+        height: 80px;
+    }
 
-  .menu.hidden ul li {
-    transform: translateY(0);
-  }
+    .menu.hidden ul li {
+        transform: translateY(0);
+    }
 
-  .menu ul {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 70px;
-    padding-right: 5%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+    .menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 70px;
+        padding-right: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 /* Large Desktop from 2560px and over */
 @media screen and (min-width: 2560px) {
-  .menu {
-    height: 120px;
-  }
+    .menu {
+        height: 120px;
+    }
 
-  .menu ul {
-    padding-top: 8px;
-  }
+    .menu ul {
+        padding-top: 15px;
+    }
 
-  .menu a {
-    font-size: 2.5rem;
-  }
+    .menu a {
+        font-size: 2rem;
+    }
 }

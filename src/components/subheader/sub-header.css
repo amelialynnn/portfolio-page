@@ -1,34 +1,35 @@
 .sub-header {
-  color: white;
-  font-size: 2.3rem;
-  max-width: 1000px;
-  min-width: 300px;
-  text-align: left;
-  word-wrap: break-word;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 500;
+    max-width: 1000px;
+    min-width: 300px;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 .frontend-span {
-  color: #ef4e8e;
+    color: #ef4e8e;
 }
 
 /* Tablet from 415px */
 @media screen and (min-width: 415px) {
-  .sub-header {
-    font-size: 2.8rem;
-  }
+    .sub-header {
+        font-size: 2.8rem;
+    }
 }
 
 /* Desktop from 1024px */
 @media screen and (min-width: 1024px) {
-  .sub-header {
-    font-size: 3.3rem;
-  }
+    .sub-header {
+        font-size: 3.3rem;
+    }
 }
 
 /* Large Desktop from 2560px and over */
 @media screen and (min-width: 2560px) {
-  .sub-header {
-    font-size: 5rem;
-    max-width: 1500px;
-  }
+    .sub-header {
+        font-size: 5rem;
+        max-width: 1500px;
+    }
 }
