@@ -1,26 +1,60 @@
 .about-container {
     padding: 90px 0 90px 0;
     background-color: #f6e6e0;
-    color: black;
     overflow-x: hidden;
 }
 
 .about-container h2 {
-    color: #607bfa;
-}
-
-section.about-container .content-container {
-    /* display: flex; */
+    color: #ef3965;
 }
 
 .profile-image-container {
     width: 80%;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 200px;
+    margin: 40px auto;
 }
 
 .profile-image-container img {
     border-radius: 50%;
     width: 100%;
     min-width: 100%;
+}
+
+/* Meduim screens from 750px */
+@media screen and (min-width: 750px) {
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .profile-image-container {
+        margin-top: 20px;
+    }
+
+    .text-container {
+        width: 70%;
+    }
+}
+
+/* Desktop from 1024px */
+@media screen and (min-width: 1024px) {
+    .content-container {
+        gap: 50px;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+}
+
+/* Large Desktop from 2560px and over */
+@media screen and (min-width: 2560px) {
+    .about-container {
+        padding: 150px 0 150px 0;
+    }
+
+    .profile-image-container {
+        max-width: 300px;
+    }
 }

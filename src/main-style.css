@@ -16,6 +16,7 @@
     background-color: #5eef8b;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .header-container-inner {
@@ -66,7 +67,7 @@
 
 /* Angle 2 */
 .angle-2 {
-    background-color: #8b9ef8;
+    background-color: #fc88a4;
 }
 
 .angle-2,
@@ -83,28 +84,19 @@
 
 /* Angle 3 */
 .angle-3 {
-    background-color: #f8ae8b;
+    background-color: #fc88a4;
 }
 
 .angle-3,
 .angle-3::after {
     content: '';
     position: absolute;
-    height: 90px;
+    height: 50px;
     width: 100%;
-    /* bottom: 0px; */
 }
 .angle-3::after {
-    background-color: #8b9ef8;
-    clip-path: polygon(
-        100% 0,
-        100% 100%,
-        75% 50%,
-        50% 100%,
-        25% 50%,
-        0 100%,
-        0 0
-    );
+    background-color: #9aacff;
+    clip-path: polygon(100% 43%, 78% 86%, 29% 0, 0 100%, 100% 100%);
 }
 
 /* Tablet from 415px */
@@ -132,7 +124,7 @@
 /* Desktop from 1024px */
 @media screen and (min-width: 1024px) {
     .header-container-outer {
-        padding: 320px 0 300px 0;
+        padding: 300px 0 300px 0;
     }
 
     .header-container-outer::before {
@@ -158,7 +150,7 @@
     }
 
     .header-container-outer {
-        padding: 500px 0 500px 0;
+        padding: 650px 0 600px 0;
     }
 
     .header-container-outer::before {
