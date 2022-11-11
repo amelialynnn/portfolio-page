@@ -7,7 +7,9 @@ const SkillsAndTools = () => {
         <>
             <h2>Skills & tools</h2>
             <h3>My toolbox</h3>
-            <p>Skills, tools and technologies I use:</p>
+            <p className="skills-tools-text">
+                Skills, tools and technologies I use:
+            </p>
             <div className="icons-container">
                 <div className="icon-box">
                     <i className="fa fa-brands fa-html5"></i>

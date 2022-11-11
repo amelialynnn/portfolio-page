@@ -1,8 +1,7 @@
 import './App.css'
 import './main-style.css'
 
-import Navbar from './components/navbar/Navbar'
-import SubHeader from './components/subheader/SubHeader'
+import Header from './components/header/Header'
 import About from './components/about/About'
 import SkillsAndTools from './components/skillsandtools/SkillsAndTools'
 import Work from './components/work/Work'
@@ -11,12 +10,7 @@ function App() {
     return (
         <div className="App">
             <header id="home" className="header-container-outer">
-                <div className="header-container-inner">
-                    <Navbar></Navbar>
-                    <div className="wrapper-width">
-                        <SubHeader></SubHeader>
-                    </div>
-                </div>
+                <Header></Header>
                 <div className="angle angle-1"></div>
             </header>
             <main>
