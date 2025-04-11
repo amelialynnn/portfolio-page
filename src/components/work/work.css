@@ -6,3 +6,19 @@
 .work-container h2 {
     color: #ef3965;
 }
+
+.work-container h4 {
+    color: #d1f7ff;
+    font-weight: 300;
+}
+
+.work-image-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.work-image-container img {
+    width: 100%;
+    min-width: 100%;
+}

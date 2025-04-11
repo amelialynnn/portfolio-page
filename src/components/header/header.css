@@ -13,14 +13,14 @@
 }
 
 .header-container-outer::before {
-    content: url(/src/assets/bonbon-sprig-with-leaves.png);
+    content: url(/src/assets/vectors/bonbon-sprig-with-leaves.png);
     position: absolute;
     transform: rotate(70deg) scale(0.9);
     top: -112px;
 }
 
 .header-container-outer::after {
-    content: url(/src/assets/bonbon-flower.png);
+    content: url(/src/assets/vectors/bonbon-flower.png);
     position: absolute;
     display: block;
     transform: scale(0.55);

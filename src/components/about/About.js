@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './about.css'
-import profileImg from '../../assets/profile.jpeg'
+import profileImg from '../../assets/profile/profile.jpeg'
 
 const About = () => {
     return (
