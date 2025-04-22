@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.28c21ee3.css",
+    "main.js": "/static/js/main.3ed72b1d.js",
+    "static/media/hamsterwars.png": "/static/media/hamsterwars.3da1fece56f4e87dd3b1.png",
+    "static/media/bonbon-flower.png": "/static/media/bonbon-flower.6873340e1266753b40ac.png",
+    "static/media/profile.jpeg": "/static/media/profile.9fb947f6752bc05e1638.jpeg",
+    "static/media/bonbon-sprig-with-leaves.png": "/static/media/bonbon-sprig-with-leaves.d7ed642965323f48c3b1.png",
+    "index.html": "/index.html",
+    "main.28c21ee3.css.map": "/static/css/main.28c21ee3.css.map",
+    "main.3ed72b1d.js.map": "/static/js/main.3ed72b1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28c21ee3.css",
+    "static/js/main.3ed72b1d.js"
+  ]
+}
